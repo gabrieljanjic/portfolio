@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana";
+}
+
+/*////////WELCOME SECTION///////*/
+
+.welcome-section {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #e9d5a1;
+  color: #333;
+}
+
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.github-icon {
+  padding: 0.5rem 0 0 1rem;
+  width: 12rem;
+}
+
+.programing-icon {
+  width: 10rem;
+}
+.my-name {
+  font-size: 2.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.front-text {
+  font-size: 1.2rem;
+}
+
+.flags {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1rem;
+}
+.flag {
+  width: 4rem;
+  height: 2.2rem;
+  border-radius: 0.4rem;
+}
+
+/*/ ///////ABOUT ME SECTION///////*/
+.about-me-section {
+  background-color: #fff;
+  color: #555;
+  padding: 0 4rem 5rem;
+}
+
+.div-about-me {
+  padding-top: 2rem;
+  max-width: 95rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 5rem;
+}
+
+.heading {
+  padding-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #555;
+}
+
+.my-picture {
+  width: 20rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.about-me-paragraf {
+  max-width: 70rem;
+  /*border: 1px solid #777;*/
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+}
+/*/ ///////SKILLS SECTION///////*/
+.skills-section {
+  background-color: #1f1f1f;
+  padding-bottom: 2rem;
+}
+.heading-skills {
+  color: #fdfbf6;
+}
+
+.div-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fdfbf6;
+  text-transform: uppercase;
+}
+.div-skills-logos {
+  padding: 3rem 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 5rem;
+}
+/*////////PROJECT SECTION///////*/
+.projects-section {
+  background-color: #edddb4;
+}
+.heading-project {
+  color: #333;
+}
+
+.div-projects {
+  margin: 0 auto;
+  padding: 2rem 2rem 5rem;
+  max-width: 70rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.div-project {
+  background-color: #fbf7ec;
+  width: 20rem;
+  height: 15rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.div-project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+/*/ ///////FOOTER///////*/
+footer {
+  width: 100%;
+  padding: 1.5rem 0 1rem;
+  background-color: #333; /*Kasnije promjenit*/
+}
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  width: 2rem;
+}
+.footer-text {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
+}
