@@ -1,5 +1,119 @@
 "use strict";
+/*Typing name */
+const text = "Gabriel Janjić";
+const typingText = document.querySelector(".typing-text");
 
+let index = 0;
+
+window.addEventListener("load", typeCharacter);
+
+function typeCharacter() {
+  if (index < text.length) {
+    typingText.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeCharacter, 100);
+  }
+}
+/*Typing array */
+const texts = ["Front-end developer", "bacc. ing. techn. inf."];
+const typingArray = document.querySelector(".typing-array");
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentText = texts[textIndex];
+  if (!isDeleting) {
+    typingArray.textContent += currentText.charAt(charIndex);
+    charIndex++;
+    if (charIndex === currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1500);
+      return;
+    }
+  } else {
+    typingArray.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+  }
+  const speed = isDeleting ? 50 : 120;
+  setTimeout(typeEffect, speed);
+}
+window.addEventListener("load", typeEffect);
+/*Changing language */
+const uk = document.querySelector(".uk");
+const croatia = document.querySelector(".croatia");
+/*Personal info */
+const nameTitle = document.getElementById("name-title");
+const nameContent = document.getElementById("name-content");
+const dateTitle = document.getElementById("date-title");
+const dateContent = document.getElementById("date-content");
+const addressTitle = document.getElementById("address-title");
+const addressContent = document.getElementById("address-content");
+const zipTitle = document.getElementById("zip-title");
+const zipContent = document.getElementById("zip-content");
+const emailTitle = document.getElementById("email-title");
+const emailContent = document.getElementById("email-content");
+const phoneTitle = document.getElementById("phone-title");
+const phoneContent = document.getElementById("phone-content");
+const educationTitle = document.getElementById("education-title");
+const educationContent = document.getElementById("education-content");
+const aboutMe = document.getElementById("about-me");
+const skills = document.getElementById("skills");
+const projects = document.getElementById("projects");
+/*NAV BAR */
+const navBarAboutMe = document.getElementById("nav-bar-about-me");
+const navBarSkills = document.getElementById("nav-bar-skills");
+const navBarProjects = document.getElementById("nav-bar-projects");
+
+uk.addEventListener("click", function () {
+  uk.classList.add("contrast");
+  croatia.classList.remove("contrast");
+  nameTitle.textContent = "	Name:";
+  dateTitle.textContent = "Date of Birth:";
+  dateContent.textContent = "June 15, 2002";
+  addressTitle.textContent = "Address:";
+  addressContent.textContent = "Šenova 3, Zagreb, CRO";
+  zipTitle.textContent = "Zip Code:";
+  phoneTitle.textContent = "Phone:";
+  educationTitle.textContent = "Education:";
+  educationContent.textContent = "Bachelor's Degree (bacc. ing. techn. inf.)";
+
+  aboutMe.textContent = "About me";
+  skills.textContent = "Skills";
+  projects.textContent = "Projects";
+
+  navBarAboutMe.textContent = "About me";
+  navBarSkills.textContent = "Skills";
+  navBarProjects.textContent = "Projects";
+});
+croatia.addEventListener("click", function () {
+  croatia.classList.add("contrast");
+  uk.classList.remove("contrast");
+  nameTitle.textContent = "Ime:";
+  dateTitle.textContent = "Datum rođenja:";
+  dateContent.textContent = "15.06.2002.";
+  addressTitle.textContent = "Adresa:";
+  addressContent.textContent = "Šenova 3, Zagreb, Hrvatska";
+  zipTitle.textContent = "Poštanski broj:";
+  phoneTitle.textContent = "Broj:";
+  educationTitle.textContent = "Edukacija:";
+  educationContent.textContent =
+    "Bacc. Ing. Techn. Inf., smjer Održavanje računalnih sustava";
+
+  aboutMe.textContent = "O meni";
+  skills.textContent = "Vještine";
+  projects.textContent = "Projekti";
+
+  navBarAboutMe.textContent = "O meni";
+  navBarSkills.textContent = "Vještine";
+  navBarProjects.textContent = "Projekti";
+});
+/*Links to projects */
 document.getElementById("to-do-list").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/to-do-list/", "_blank");
 });
@@ -7,29 +121,34 @@ document.getElementById("to-do-list").addEventListener("click", function () {
 document.getElementById("omnifood").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/omnifood/", "_blank");
 });
-
+///*Showing navBar *///
 document.addEventListener("scroll", function () {
   const navbar = document.querySelector("nav");
   const scrollPosition = window.scrollY;
   const viewportHeight = window.innerHeight;
-  console.log(scrollPosition);
-  console.log(viewportHeight);
   if (scrollPosition > viewportHeight - 100) {
     navbar.classList.add("fixed");
   } else {
     navbar.classList.remove("fixed");
   }
 });
+///*Showing divs*///
 
 window.addEventListener("scroll", function () {
-  let projects = document.querySelectorAll(".div-project");
-  projects.forEach(function (project) {
-    let position = project.getBoundingClientRect();
-
-    if (position.top < window.innerHeight && position.bottom > 0) {
-      project.classList.add("visible");
+  const projects = document.querySelectorAll(".div-project");
+  const skills = document.querySelectorAll(".div-logo");
+  const aboutMe = document.querySelectorAll(".div-about-me");
+  checkVisibility(projects);
+  checkVisibility(skills);
+  checkVisibility(aboutMe);
+});
+function checkVisibility(elements) {
+  elements.forEach(function (element) {
+    let position = element.getBoundingClientRect();
+    if (position.top < window.innerHeight) {
+      element.classList.add("visible");
     } else {
-      project.classList.remove("visible");
+      element.classList.remove("visible");
     }
   });
-});
+}

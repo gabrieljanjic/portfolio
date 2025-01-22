@@ -17,9 +17,19 @@
         />
       </a>
       <ul>
-        <li><a class="link" href="#about-me-section">About me</a></li>
-        <li><a class="link" href="#skills-section">Skills</a></li>
-        <li><a class="link" href="#projects-section">Projects</a></li>
+        <li>
+          <a class="link" id="nav-bar-about-me" href="#about-me-section"
+            >About me</a
+          >
+        </li>
+        <li>
+          <a class="link" id="nav-bar-skills" href="#skills-section">Skills</a>
+        </li>
+        <li>
+          <a class="link" id="nav-bar-projects" href="#projects-section"
+            >Projects</a
+          >
+        </li>
       </ul>
     </nav>
     <section class="welcome-section">
@@ -29,36 +39,53 @@
           class="programing-icon"
           alt="programing icon"
         />
-        <h1 class="my-name">Gabriel Janjić</h1>
-        <p class="front-text">FRONT-END DEVELOPER</p>
-        <!--dodat teksve koji ce se pisat i brisat (web developer/bacc...)-->
-        <p></p>
+        <h1 class="my-name typing-text"></h1>
+        <p class="front-text typing-array"></p>
+
         <!--Dodat github logo na kul nacin-->
       </div>
       <div class="flags">
-        <img src="img/uk.png" class="flag" alt="United Kingdom flag" />
-        <img src="img/croatia.png" class="flag" alt="Croatian flag" />
+        <img
+          src="img/uk.png"
+          class="flag uk contrast"
+          alt="United Kingdom flag"
+        />
+        <img src="img/croatia.png" class="flag croatia" alt="Croatian flag" />
       </div>
     </section>
     <section id="about-me-section" class="about-me-section">
-      <h2 class="heading">About me</h2>
+      <h2 class="heading" id="about-me">About me</h2>
       <div class="div-about-me">
         <img src="img/my-picture.jpeg" class="my-picture" />
-
-        <div class="about-me-paragraf">
-          <div class="safari"></div>
-          <h5>Hey :)</h5>
-          <p>
-            👋 I'm Gabriel Janjić. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Asperiores ipsa hic velit? Nulla eos, eveniet
-            quibusdam et ea sunt molestias exercitationem iusto ipsa quam
-            reiciendis illo eaque pariatur voluptates nam?
+        <div class="ul-info">
+          <p><img src="img/name-icon.png" class="about-me-icons" /></p>
+          <p id="name-title">Name:</p>
+          <p id="name-content">Gabriel Janjić</p>
+          <p><img src="img/date-icon.png" class="about-me-icons" /></p>
+          <p id="date-title">Date of Birth:</p>
+          <p id="date-content">June 15, 2002</p>
+          <p><img src="img/address-icon.png" class="about-me-icons" /></p>
+          <p id="address-title">Address:</p>
+          <p id="address-content">Šenova 3, Zagreb, Croatia</p>
+          <p><img src="img/zip-icon.png" class="about-me-icons" /></p>
+          <p id="zip-title">Zip Code:</p>
+          <p id="zip-content">10010</p>
+          <p><img src="img/email-icon.png" class="about-me-icons" /></p>
+          <p id="email-title">Email:</p>
+          <p id="email-content">janjicgabriel1@gmail.com</p>
+          <p><img src="img/telephone-icon.png" class="about-me-icons" /></p>
+          <p id="phone-title">Phone:</p>
+          <p id="phone-content">+385 91 379 3287</p>
+          <p><img src="img/education-icon.png" class="about-me-icons" /></p>
+          <p id="education-title">Education:</p>
+          <p id="education-content">
+            Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance
           </p>
         </div>
       </div>
     </section>
     <section id="skills-section" class="skills-section">
-      <h2 class="heading heading-skills">Skills</h2>
+      <h2 class="heading heading-skills" id="skills">Skills</h2>
       <div class="div-skills-logos">
         <div class="div-logo">
           <img class="logo" src="logos/html-logo-white.png" alt="html logo" />
@@ -91,7 +118,7 @@
       </div>
     </section>
     <section id="projects-section" class="projects-section">
-      <h2 class="heading heading-project">PROJECTS</h2>
+      <h2 class="heading heading-project" id="projects">PROJECTS</h2>
       <div class="div-projects">
         <div class="div-project" id="to-do-list">
           <img
@@ -111,8 +138,13 @@
           <p class="project-name">Omnifood</p>
         </div>
 
-        <div class="div-project">
-          <p>Netflix</p>
+        <div class="div-project" id="wheather">
+          <img
+            src="project-img/weather.png"
+            class="project-icon"
+            alt="wheather icon"
+          />
+          <p class="project-name">Wheather app</p>
         </div>
         <div class="div-project">
           <p>Omni food</p>
