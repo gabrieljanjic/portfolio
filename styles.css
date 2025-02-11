@@ -6,12 +6,8 @@
 }
 
 body {
-  font-family: "Verdana";
+  font-family: "Roboto";
 }
-
-/*body::-webkit-scrollbar {
-  display: none;
-}*/
 
 /*////////NAVIGATION///////*/
 nav {
@@ -20,7 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   position: absolute;
 }
 
@@ -30,6 +26,13 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
+}
+.sticky {
+  position: fixed;
+  background-color: rgb(31, 31, 31, 0.98);
+}
+.nav {
+  z-index: 10000;
 }
 
 nav ul {
@@ -124,21 +127,20 @@ li:hover {
 /*/ ///////ABOUT ME SECTION///////*/
 .about-me-section {
   background-color: #fff;
-  color: #555;
-  padding: 0 4rem 6rem;
+  color: #222;
+  padding: 0 4rem 8rem;
 }
 
 .heading {
-  padding: 4rem 0 0.5rem;
+  padding: 4rem 0 2.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  color: #555;
 }
 
 .div-about-me {
-  transform: scale(0.8);
-  transition: transform 0.3s ease;
+  /* transform: scale(0.8);
+  transition: transform 0.3s ease;*/
   padding-top: 2rem;
   max-width: 95rem;
   margin: 0 auto;
@@ -153,26 +155,61 @@ li:hover {
   justify-self: right;
   width: 20rem;
   padding: 1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);*/
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);*/
+  background: linear-gradient(135deg, #f8f2e3, #f0e2bd);
+  border-radius: 1rem;
+  padding: 3rem;
+  max-width: 60rem;
+  width: 100%;
 }
 
+.about-me-buttons {
+  display: flex;
+  gap: 2rem;
+}
+.about-me-button {
+  border-radius: 0.5rem;
+  border: 1px solid #e9d5a1;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.4rem;
+  transform: translateY(-150%);
+  background-color: #fff;
+  color: #333;
+
+  cursor: pointer;
+}
 .ul-info {
   display: grid;
   justify-content: center;
+  text-align: left;
   align-items: center;
   grid-template-columns: 1fr 6fr 25fr;
   gap: 1rem;
   font-size: 1.2rem;
-  max-width: 60rem;
-  width: 100%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-  padding: 3rem;
-}
 
+  margin-bottom: 2rem;
+}
 .about-me-icons {
   height: 1.2rem;
 }
-
+.download-btn {
+  border: 0.5px solid #111;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: none;
+}
+.download-btn-link {
+  text-decoration: none;
+  color: #333;
+}
 /*/ ///////SKILLS SECTION///////*/
 .skills-section {
   background-color: #1f1f1f;

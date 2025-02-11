@@ -81,7 +81,8 @@ uk.addEventListener("click", function () {
   zipTitle.textContent = "Zip Code:";
   phoneTitle.textContent = "Phone:";
   educationTitle.textContent = "Education:";
-  educationContent.textContent = "Bachelor's Degree (bacc. ing. techn. inf.)";
+  educationContent.textContent =
+    "Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance";
 
   aboutMe.textContent = "About me";
   skills.textContent = "Skills";
@@ -122,25 +123,35 @@ document.getElementById("omnifood").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/omnifood/", "_blank");
 });
 ///*Showing navBar *///
-document.addEventListener("scroll", function () {
-  const navbar = document.querySelector("nav");
-  const scrollPosition = window.scrollY;
-  const viewportHeight = window.innerHeight;
-  if (scrollPosition > viewportHeight - 100) {
-    navbar.classList.add("fixed");
-  } else {
-    navbar.classList.remove("fixed");
-  }
+
+const aboutMeSection = document.querySelector(".about-me-section");
+const welcomeSection = document.querySelector(".welcome-section");
+
+const nav = document.querySelector(".nav");
+const navHeight = nav.getBoundingClientRect().height;
+
+const stickyNav = function (enteries) {
+  const [entry] = enteries;
+  console.log(entry);
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+
+const welcomeSectionObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
 });
+
+welcomeSectionObserver.observe(welcomeSection);
+
 ///*Showing divs*///
 
 window.addEventListener("scroll", function () {
   const projects = document.querySelectorAll(".div-project");
   const skills = document.querySelectorAll(".div-logo");
-  const aboutMe = document.querySelectorAll(".div-about-me");
   checkVisibility(projects);
   checkVisibility(skills);
-  checkVisibility(aboutMe);
 });
 function checkVisibility(elements) {
   elements.forEach(function (element) {

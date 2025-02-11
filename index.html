@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Janjić</title>
-    <link rel="icon" type="image/webp" href="img/programer-icon.png" />
+    <link rel="icon" type="image/webp" href="img/coding.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-queries.css" />
   </head>
   <body>
-    <nav>
+    <nav class="nav">
       <a href="https://github.com/gabrieljanjic" target="_blanck">
         <img
           class="github-icon"
@@ -35,14 +36,12 @@
     <section class="welcome-section">
       <div class="welcome-div">
         <img
-          src="img/programing-icon.png"
+          src="img/programing-icon-2.png"
           class="programing-icon"
           alt="programing icon"
         />
         <h1 class="my-name typing-text"></h1>
         <p class="front-text typing-array"></p>
-
-        <!--Dodat github logo na kul nacin-->
       </div>
       <div class="flags">
         <img
@@ -57,30 +56,43 @@
       <h2 class="heading" id="about-me">About me</h2>
       <div class="div-about-me">
         <img src="img/my-picture.jpeg" class="my-picture" />
-        <div class="ul-info">
-          <p><img src="img/name-icon.png" class="about-me-icons" /></p>
-          <p id="name-title">Name:</p>
-          <p id="name-content">Gabriel Janjić</p>
-          <p><img src="img/date-icon.png" class="about-me-icons" /></p>
-          <p id="date-title">Date of Birth:</p>
-          <p id="date-content">June 15, 2002</p>
-          <p><img src="img/address-icon.png" class="about-me-icons" /></p>
-          <p id="address-title">Address:</p>
-          <p id="address-content">Šenova 3, Zagreb, Croatia</p>
-          <p><img src="img/zip-icon.png" class="about-me-icons" /></p>
-          <p id="zip-title">Zip Code:</p>
-          <p id="zip-content">10010</p>
-          <p><img src="img/email-icon.png" class="about-me-icons" /></p>
-          <p id="email-title">Email:</p>
-          <p id="email-content">janjicgabriel1@gmail.com</p>
-          <p><img src="img/telephone-icon.png" class="about-me-icons" /></p>
-          <p id="phone-title">Phone:</p>
-          <p id="phone-content">+385 91 379 3287</p>
-          <p><img src="img/education-icon.png" class="about-me-icons" /></p>
-          <p id="education-title">Education:</p>
-          <p id="education-content">
-            Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance
-          </p>
+
+        <div class="flex">
+          <div class="about-me-buttons">
+            <button class="about-me-button">Nesto</button>
+            <button class="about-me-button">Nesto2</button>
+            <button class="about-me-button">Nesto3</button>
+          </div>
+          <div class="ul-info">
+            <p><img src="img/name-icon.png" class="about-me-icons" /></p>
+            <p id="name-title">Name:</p>
+            <p id="name-content">Gabriel Janjić</p>
+            <p><img src="img/date-icon.png" class="about-me-icons" /></p>
+            <p id="date-title">Date of Birth:</p>
+            <p id="date-content">June 15, 2002</p>
+            <p><img src="img/address-icon.png" class="about-me-icons" /></p>
+            <p id="address-title">Address:</p>
+            <p id="address-content">Šenova 3, Zagreb, Croatia</p>
+            <p><img src="img/zip-icon.png" class="about-me-icons" /></p>
+            <p id="zip-title">Zip Code:</p>
+            <p id="zip-content">10010</p>
+            <p><img src="img/email-icon.png" class="about-me-icons" /></p>
+            <p id="email-title">Email:</p>
+            <p id="email-content">janjicgabriel1@gmail.com</p>
+            <p><img src="img/telephone-icon.png" class="about-me-icons" /></p>
+            <p id="phone-title">Phone:</p>
+            <p id="phone-content">+385 91 379 3287</p>
+            <p><img src="img/education-icon.png" class="about-me-icons" /></p>
+            <p id="education-title">Education:</p>
+            <p id="education-content">
+              Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance
+            </p>
+          </div>
+          <button class="download-btn">
+            <a href="Gabriel-Janjić-CV.pdf" class="download-btn-link" download
+              >Download my CV</a
+            >
+          </button>
         </div>
       </div>
     </section>
