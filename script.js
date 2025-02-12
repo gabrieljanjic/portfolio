@@ -146,20 +146,25 @@ const welcomeSectionObserver = new IntersectionObserver(stickyNav, {
 welcomeSectionObserver.observe(welcomeSection);
 
 ///*Showing divs*///
+const allSection = document.querySelectorAll(".section");
 
-window.addEventListener("scroll", function () {
-  const projects = document.querySelectorAll(".div-project");
-  const skills = document.querySelectorAll(".div-logo");
-  checkVisibility(projects);
-  checkVisibility(skills);
-});
-function checkVisibility(elements) {
-  elements.forEach(function (element) {
-    let position = element.getBoundingClientRect();
-    if (position.top < window.innerHeight) {
-      element.classList.add("visible");
-    } else {
-      element.classList.remove("visible");
+const revealSection = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    else {
+      entry.target.classList.remove("section-hidden");
+      observer.unobserve(entry.target);
     }
   });
-}
+};
+
+const allSectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSection.forEach(function (section) {
+  allSectionObserver.observe(section);
+  section.classList.add("section-hidden");
+  console.log(section);
+});
