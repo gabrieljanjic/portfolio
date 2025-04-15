@@ -15,7 +15,7 @@ function typeCharacter() {
   }
 }
 /*Typing array */
-const texts = ["Front-end developer", "bacc. ing. techn. inf."];
+const texts = ["Front-end developer", "bacc. ing. techn. inf. (soon)"];
 const typingArray = document.querySelector(".typing-array");
 
 let textIndex = 0;
@@ -81,8 +81,7 @@ uk.addEventListener("click", function () {
   zipTitle.textContent = "Zip Code:";
   phoneTitle.textContent = "Phone:";
   educationTitle.textContent = "Education:";
-  educationContent.textContent =
-    "Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance";
+  educationContent.textContent = "Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance";
 
   aboutMe.textContent = "About me";
   skills.textContent = "Skills";
@@ -103,8 +102,7 @@ croatia.addEventListener("click", function () {
   zipTitle.textContent = "Poštanski broj:";
   phoneTitle.textContent = "Broj:";
   educationTitle.textContent = "Edukacija:";
-  educationContent.textContent =
-    "Bacc. Ing. Techn. Inf., smjer Održavanje računalnih sustava";
+  educationContent.textContent = "Bacc. Ing. Techn. Inf., smjer Održavanje računalnih sustava";
 
   aboutMe.textContent = "O meni";
   skills.textContent = "Vještine";
@@ -121,6 +119,20 @@ document.getElementById("to-do-list").addEventListener("click", function () {
 
 document.getElementById("omnifood").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/omnifood/", "_blank");
+});
+document.getElementById("weather").addEventListener("click", function () {
+  window.open("https://gabrieljanjic.github.io/weather-app/", "_blank");
+});
+
+document.getElementById("calculator").addEventListener("click", function () {
+  window.open("https://gabrieljanjic.github.io/calculator/", "_blank");
+});
+document.getElementById("imdb").addEventListener("click", function () {
+  window.open("https://gabrieljanjic.github.io/imdb/", "_blank");
+});
+
+document.getElementById("rps").addEventListener("click", function () {
+  window.open("https://gabrieljanjic.github.io/rock-paper-scissors/", "_blank");
 });
 ///*Showing navBar *///
 
@@ -168,3 +180,4 @@ allSection.forEach(function (section) {
   section.classList.add("section-hidden");
   console.log(section);
 });
+s;
