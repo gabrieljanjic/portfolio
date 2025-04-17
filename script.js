@@ -82,7 +82,7 @@ uk.addEventListener("click", function () {
   zipTitle.textContent = "Zip Code:";
   phoneTitle.textContent = "Phone:";
   educationTitle.textContent = "Education:";
-  educationContent.textContent = "Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance";
+  educationContent.textContent = "Bacc. Ing. Techn. Inf.";
   btnDownload.textContent = "Download my CV";
   aboutMe.textContent = "About me";
   skills.textContent = "Skills";
