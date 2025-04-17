@@ -65,6 +65,7 @@ const educationContent = document.getElementById("education-content");
 const aboutMe = document.getElementById("about-me");
 const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
+const btnDownload = document.getElementById("btn-download");
 /*NAV BAR */
 const navBarAboutMe = document.getElementById("nav-bar-about-me");
 const navBarSkills = document.getElementById("nav-bar-skills");
@@ -82,7 +83,7 @@ uk.addEventListener("click", function () {
   phoneTitle.textContent = "Phone:";
   educationTitle.textContent = "Education:";
   educationContent.textContent = "Bacc. Ing. Techn. Inf., major in Computer Systems Maintenance";
-
+  btnDownload.textContent = "Download my CV";
   aboutMe.textContent = "About me";
   skills.textContent = "Skills";
   projects.textContent = "Projects";
@@ -103,6 +104,7 @@ croatia.addEventListener("click", function () {
   phoneTitle.textContent = "Broj:";
   educationTitle.textContent = "Edukacija:";
   educationContent.textContent = "Bacc. Ing. Techn. Inf., smjer Održavanje računalnih sustava";
+  btnDownload.textContent = "Preuzmite moj životopis";
 
   aboutMe.textContent = "O meni";
   skills.textContent = "Vještine";
