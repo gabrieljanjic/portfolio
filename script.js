@@ -15,7 +15,7 @@ function typeCharacter() {
   }
 }
 /*Typing array */
-const texts = ["Front-end developer", "bacc. ing. techn. inf. (soon)"];
+const texts = ["Front-end developer", "bacc. ing. techn. inf."];
 const typingArray = document.querySelector(".typing-array");
 
 let textIndex = 0;
@@ -78,7 +78,7 @@ uk.addEventListener("click", function () {
   dateTitle.textContent = "Date of Birth:";
   dateContent.textContent = "June 15, 2002";
   addressTitle.textContent = "Address:";
-  addressContent.textContent = "Šenova 3, Zagreb, CRO";
+  addressContent.textContent = "Šenova 3, Zagreb, Croatia";
   zipTitle.textContent = "Zip Code:";
   phoneTitle.textContent = "Phone:";
   educationTitle.textContent = "Education:";
@@ -103,7 +103,7 @@ croatia.addEventListener("click", function () {
   zipTitle.textContent = "Poštanski broj:";
   phoneTitle.textContent = "Broj:";
   educationTitle.textContent = "Edukacija:";
-  educationContent.textContent = "Bacc. Ing. Techn. Inf., smjer Održavanje računalnih sustava";
+  educationContent.textContent = "Bacc. Ing. Techn. Inf.";
   btnDownload.textContent = "Preuzmite moj životopis";
 
   aboutMe.textContent = "O meni";
@@ -146,7 +146,6 @@ const navHeight = nav.getBoundingClientRect().height;
 
 const stickyNav = function (enteries) {
   const [entry] = enteries;
-  console.log(entry);
   if (!entry.isIntersecting) nav.classList.add("sticky");
   else nav.classList.remove("sticky");
 };
@@ -174,12 +173,11 @@ const revealSection = function (entries, observer) {
 
 const allSectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0,
 });
 
 allSection.forEach(function (section) {
   allSectionObserver.observe(section);
   section.classList.add("section-hidden");
-  console.log(section);
 });
 s;

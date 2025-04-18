@@ -200,7 +200,8 @@ li:hover {
 }
 .download-btn {
   font-size: 1rem;
-  border: 0.5px solid #111;
+  border: 1px solid #333;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   background: none;
@@ -231,6 +232,8 @@ li:hover {
   padding: 2rem 2rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 60rem;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 2rem;
