@@ -180,6 +180,7 @@ allSection.forEach(function (section) {
   allSectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+/*
 const navUl = document.querySelector(".nav-ul");
 const btnIconMenu = document.querySelector(".btn-icon-menu");
 const btnIconX = document.querySelector(".btn-icon-x");
@@ -201,5 +202,31 @@ links.forEach((link) => {
     btnIconMenu.style.display = "block";
     btnIconX.style.display = "none";
     navUl.style.display = "none";
+  });
+});
+*/
+const navUl = document.querySelector(".nav-ul");
+const btnIconMenu = document.querySelector(".btn-icon-menu");
+const btnIconX = document.querySelector(".btn-icon-x");
+const links = document.querySelectorAll(".link");
+btnIconMenu.addEventListener("click", function () {
+  btnIconMenu.style.display = "none";
+  btnIconX.style.display = "block";
+  navUl.style.display = "flex";
+});
+btnIconX.addEventListener("click", function () {
+  btnIconMenu.style.display = "block";
+  btnIconX.style.display = "none";
+  navUl.style.display = "none";
+});
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    if (window.innerWidth > 640) {
+      navUl.style.display = "flex";
+    } else {
+      btnIconMenu.style.display = "block";
+      btnIconX.style.display = "none";
+      navUl.style.display = "none";
+    }
   });
 });
