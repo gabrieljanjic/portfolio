@@ -10,14 +10,16 @@ body {
 }
 
 /*////////NAVIGATION///////*/
-nav {
+.nav {
   width: 100%;
   z-index: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgb(31, 31, 31);
   position: absolute;
+  padding: 0 1.4rem;
 }
 
 .fixed {
@@ -35,16 +37,15 @@ nav {
   z-index: 10000;
 }
 
-nav ul {
+.nav-ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
   list-style: none;
   gap: 2rem;
-  margin-right: 1.5rem;
 }
+
 .github-icon {
-  padding: 0.8rem 0 0.8rem 1.4rem;
+  padding: 0.8rem 0;
   width: 8rem;
   transition: all 0.3s;
 }
@@ -60,6 +61,16 @@ li:hover {
 .link {
   text-decoration: none;
   color: #fff;
+}
+.btn-icon-menu,
+.btn-icon-x {
+  display: none;
+  background: none;
+  border: none;
+  justify-self: right;
+}
+.icons-menu-x {
+  width: 2rem;
 }
 
 /*////////WELCOME SECTION///////*/
@@ -328,6 +339,10 @@ footer {
 .section {
   transition: transform 0.8s, opacity 1s;
 }
+/*///////General//////*/
+.hidden {
+  display: none;
+}
 /**********************************/
 @media (max-width: 66rem) {
   html {
@@ -384,6 +399,22 @@ footer {
   }
   .footer-logo {
     width: 2.6rem;
+  }
+  .nav-ul {
+    justify-self: left;
+
+    flex-direction: column;
+    grid-column: span 2;
+    display: none;
+    gap: 0;
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .btn-icon-menu {
+    display: block;
   }
 }
 @media (max-width: 35rem) {

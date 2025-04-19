@@ -180,4 +180,26 @@ allSection.forEach(function (section) {
   allSectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
-s;
+const navUl = document.querySelector(".nav-ul");
+const btnIconMenu = document.querySelector(".btn-icon-menu");
+const btnIconX = document.querySelector(".btn-icon-x");
+btnIconMenu.addEventListener("click", function () {
+  btnIconMenu.style.display = "none";
+  btnIconX.style.display = "block";
+  nav.style.flexDirection = "column";
+  navUl.style.display = "flex";
+});
+btnIconX.addEventListener("click", function () {
+  btnIconMenu.style.display = "block";
+  btnIconX.style.display = "none";
+  navUl.style.display = "none";
+});
+const links = document.querySelectorAll(".link");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    btnIconMenu.style.display = "block";
+    btnIconX.style.display = "none";
+    navUl.style.display = "none";
+  });
+});
