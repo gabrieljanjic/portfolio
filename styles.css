@@ -68,9 +68,14 @@ li:hover {
   background: none;
   border: none;
   justify-self: right;
+  transition: all 0.4s ease;
 }
 .icons-menu-x {
   width: 2rem;
+}
+.btn-icon-menu:hover,
+.btn-icon-x:hover {
+  transform: rotate(90deg);
 }
 
 /*////////WELCOME SECTION///////*/
