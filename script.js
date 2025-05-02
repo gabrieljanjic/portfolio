@@ -126,8 +126,8 @@ document.getElementById("weather").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/weather-app/", "_blank");
 });
 
-document.getElementById("calculator").addEventListener("click", function () {
-  window.open("https://gabrieljanjic.github.io/calculator/", "_blank");
+document.getElementById("all-cart").addEventListener("click", function () {
+  window.open("https://gabrieljanjic.github.io/all-cart/", "_blank");
 });
 document.getElementById("imdb").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/imdb/", "_blank");
