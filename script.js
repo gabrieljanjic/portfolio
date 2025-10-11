@@ -115,8 +115,8 @@ croatia.addEventListener("click", function () {
   navBarProjects.textContent = "Projekti";
 });
 /*Links to projects */
-document.getElementById("to-do-list").addEventListener("click", function () {
-  window.open("https://gabrieljanjic.github.io/to-do-list/", "_blank");
+document.getElementById("hotel").addEventListener("click", function () {
+  window.open("https://booking-app-bmps.onrender.com", "_blank");
 });
 
 document.getElementById("omnifood").addEventListener("click", function () {
