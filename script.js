@@ -115,7 +115,7 @@ croatia.addEventListener("click", function () {
   navBarProjects.textContent = "Projekti";
 });
 /*Links to projects */
-document.getElementById("hotel").addEventListener("click", function () {
+document.getElementById("booking").addEventListener("click", function () {
   window.open("https://booking-app-bmps.onrender.com", "_blank");
 });
 
