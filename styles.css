@@ -160,7 +160,7 @@ li:hover {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: 1fr; /*1fr 2fr*/
+  grid-template-columns: 1fr; 
   column-gap: 3rem;
 }
 
@@ -248,7 +248,7 @@ li:hover {
 .div-skills-logos {
   padding: 2rem 2rem 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   max-width: 60rem;
   margin: 0 auto;
   justify-content: center;
@@ -450,6 +450,9 @@ footer {
     font-size: 1rem;
   }
   .div-skills-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     padding: 1rem 1.5rem;
   }
   .div-project {
@@ -460,7 +463,7 @@ footer {
   }
   .flex {
     max-width: 40rem;
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 1rem 1rem 1rem 2rem;
   }
   .download-btn {
     font-size: 1.2rem;

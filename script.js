@@ -15,7 +15,7 @@ function typeCharacter() {
   }
 }
 /*Typing array */
-const texts = ["Front-end developer", "bacc. ing. techn. inf."];
+const texts = ["Full-stack developer", "bacc. ing. techn. inf."];
 const typingArray = document.querySelector(".typing-array");
 
 let textIndex = 0;
@@ -119,8 +119,8 @@ document.getElementById("booking").addEventListener("click", function () {
   window.open("https://booking-app-bmps.onrender.com", "_blank");
 });
 
-document.getElementById("omnifood").addEventListener("click", function () {
-  window.open("https://gabrieljanjic.github.io/omnifood/", "_blank");
+document.getElementById("travel-hub").addEventListener("click", function () {
+  window.open("https://travel-hub-indol.vercel.app/", "_blank");
 });
 document.getElementById("weather").addEventListener("click", function () {
   window.open("https://gabrieljanjic.github.io/weather-app/", "_blank");
