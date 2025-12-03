@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-family: "Roboto", "serif";
+  background-color: #0c0f11;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 1rem 2rem;
+  min-height: 100vh;
+}
+.section {
+  padding: 0 2rem !important;
+}
+.h5 {
+  letter-spacing: 1px;
+}
+.almost-white {
+  color: #a8adb2;
+}
+.custom-big-y-padding {
+  padding: 4rem 0 !important;
+}
+.custom-big-padding {
+  padding: 4rem;
+}
+/* NAV */
+.link {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+#navbar-links {
+  width: 100%;
+}
+
+.show-mobile-menu {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+/* ABOUT */
+.img-div {
+  border-radius: 500px;
+  padding: 5px;
+  background: linear-gradient(45deg, #ffc000, #d300c5);
+  max-width: 11rem;
+  max-height: 11rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 10.5rem;
+  height: 10.5rem;
+  object-fit: cover;
+}
+.icons {
+  width: 1.6rem;
+}
+/* TECH STACK*/
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 1rem;
+}
+
+.techLogo {
+  width: 2rem;
+}
+
+/* PROJECT */
+.project-div {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.project-img {
+  border-radius: 10px;
+}
+
+.project-icons {
+  width: 1rem;
+  height: 1rem;
+  height: auto;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+.project-pill {
+  border-radius: 50px;
+  padding: 0 4px;
+  width: 100%;
+}
+
+.source-live-link-div {
+  background-color: #1c1e21;
+  border-radius: 50px;
+  padding: 8px;
+  width: 100%;
+}
+
+.link-icons {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media (max-width: 45rem) {
+  main {
+    padding: 1rem 0;
+  }
+  #name-button-nav {
+    padding: 0 1rem;
+  }
+  .section {
+    padding: 1rem 2rem !important;
+  }
+  #menu-icon {
+    display: block !important;
+  }
+  #navbar-links {
+    display: none !important;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar-links.show-mobile-menu {
+    display: flex !important;
+  }
+}
