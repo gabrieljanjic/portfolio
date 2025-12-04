@@ -32,7 +32,7 @@ const Projects = () => {
                         style={{ flex: "0 0 auto" }}
                       />
                       <p
-                        className="p-0 m-0 text-white fs-6"
+                        className="p-0 m-0 text-white fs-6 tech-p"
                         style={{
                           fontSize: "0.8rem",
                         }}
@@ -49,8 +49,7 @@ const Projects = () => {
                 <img src={Web} className="link-icons" />
                 <a
                   href={item.pageLink}
-                  className="link text-white cursor"
-                  style={{ fontSize: "0.8rem" }}
+                  className="link text-white cursor source-live-link-p"
                   target="_blank"
                 >
                   LIVE DEMO
@@ -60,8 +59,7 @@ const Projects = () => {
                 <img src={Github} className="link-icons" />
                 <a
                   href={item.githubLink}
-                  className="link text-white cursor"
-                  style={{ fontSize: "0.8rem" }}
+                  className="link text-white cursor source-live-link-p"
                   target="_blank"
                 >
                   SOURCE CODE

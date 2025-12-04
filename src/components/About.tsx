@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="section d-flex flex-column flex-sm-row align-items-center w-100 gap-5 custom-big-y-padding"
     >
-      <div className="img-div w-50">
+      <div className="img-div w-100 w-lg-50">
         <div className="img-inner-div">
           <img src={MyPhoto} className="img" />
         </div>
@@ -26,18 +26,18 @@ const About = () => {
               <p className=" p-0 m-0 almost-white">Zagreb, Croatia</p>
             </div>
           </div>
-          <div className="d-flex gap-4">
+          <div className="d-flex gap-2 gap-md-4">
             {aboutData.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="d-flex justify-content-between align-items-center gap-2"
+                  className="d-flex justify-content-between align-items-center gap-2 "
                 >
                   <img src={item.path} className="icons" />
                   <a
                     href={item.link}
                     target="_blank"
-                    className="p-0 m-0 link almost-white"
+                    className="p-0 m-0 link almost-white about-links"
                   >
                     {item.name}
                   </a>

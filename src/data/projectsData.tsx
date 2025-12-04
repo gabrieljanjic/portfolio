@@ -1,15 +1,10 @@
 import ReactLogo from "../imgs/react.png";
 import BootstrapLogo from "../imgs/bootstrap.png";
-import TailwindLogo from "../imgs/tailwind.png";
 import CssLogo from "../imgs/css.png";
 import HtmlLogo from "../imgs/html.png";
 import JavaScriptLogo from "../imgs/javascript.png";
-import TypeScriptLogo from "../imgs/typescript.png";
 import MongoDbLogo from "../imgs/mongo-db.png";
-import MySqlLogo from "../imgs/my-sql.png";
 import NodeJsLogo from "../imgs/node-js.png";
-import TravelHubImg from "../imgs/project-imgs/travel-hub-img.png";
-import BookingAppImg from "../imgs/project-imgs/booking-app-img.png";
 import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.png";
 import BookingAppTabletImg from "../imgs/project-imgs/booking-app-tablet-img.png";
 
@@ -42,12 +37,7 @@ const BootstrapTechnology: TechnologyItem = {
   logo: BootstrapLogo,
   backgroundColor: "#6610f2",
 };
-const TailwindTechnology: TechnologyItem = {
-  id: 3,
-  name: "Tailwind",
-  logo: TailwindLogo,
-  backgroundColor: "#0ea5e9",
-};
+
 const CssTechnology: TechnologyItem = {
   id: 4,
   name: "CSS",
@@ -66,24 +56,14 @@ const JavaScriptTechnology: TechnologyItem = {
   logo: JavaScriptLogo,
   backgroundColor: "#f59e0b",
 };
-const TypeScriptTechnology: TechnologyItem = {
-  id: 7,
-  name: "TypeScript",
-  logo: TypeScriptLogo,
-  backgroundColor: "#2563eb",
-};
+
 const MongoDbTechnology: TechnologyItem = {
   id: 8,
   name: "MongoDB",
   logo: MongoDbLogo,
   backgroundColor: "#065f46",
 };
-const MySqlTechnology: TechnologyItem = {
-  id: 9,
-  name: "MySQL",
-  logo: MySqlLogo,
-  backgroundColor: "#0c4a6e",
-};
+
 const NodeJsTechnology: TechnologyItem = {
   id: 10,
   name: "Node.js",
