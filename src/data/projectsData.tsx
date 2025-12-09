@@ -5,8 +5,8 @@ import HtmlLogo from "../imgs/html.png";
 import JavaScriptLogo from "../imgs/javascript.png";
 import MongoDbLogo from "../imgs/mongo-db.png";
 import NodeJsLogo from "../imgs/node-js.png";
-import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.png";
-import BookingAppTabletImg from "../imgs/project-imgs/booking-app-tablet-img.png";
+import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.webp";
+import BookingAppTabletImg from "../imgs/project-imgs/booking-app-tablet-img.webp";
 
 type TechnologyItem = {
   id: number;
@@ -29,7 +29,7 @@ const ReactTechnology: TechnologyItem = {
   id: 1,
   name: "React",
   logo: ReactLogo,
-  backgroundColor: "#0d6efd", // tamnija od loga
+  backgroundColor: "#0d6efd",
 };
 const BootstrapTechnology: TechnologyItem = {
   id: 2,

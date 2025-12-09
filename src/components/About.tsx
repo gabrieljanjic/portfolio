@@ -1,11 +1,13 @@
 import MyPhoto from "../imgs/profile-picture.jpeg";
 import aboutData from "../data/aboutData";
 import Pin from "../imgs/pin.png";
+import Gmail from "../imgs/gmail.png";
+
 const About = () => {
   return (
     <section
       id="about"
-      className="section d-flex flex-column flex-sm-row align-items-center w-100 gap-5 custom-big-y-padding"
+      className="section d-flex flex-column flex-md-row align-items-center w-100 gap-5 custom-big-y-padding"
     >
       <div className="img-div w-100 w-lg-50">
         <div className="img-inner-div">
@@ -19,9 +21,13 @@ const About = () => {
         <h4 className="almost-white mb-4">
           I'm Bacc. Ing. Techn. Inf. & Full-Stack Developer.
         </h4>
+        <div className="d-flex gap-2 mb-3">
+          <img src={Gmail} className="icons" />
+          <p className="almost-white p-0 m-0">janjicgabriel1@gmail.com</p>
+        </div>
         <div className="d-flex justify-content-between w-100">
           <div className="w-50">
-            <div className="d-flex align-items-center gap-2">
+            <div className="d-flex align-items-center gap-2 ">
               <img src={Pin} className="icons" />
               <p className=" p-0 m-0 almost-white">Zagreb, Croatia</p>
             </div>
