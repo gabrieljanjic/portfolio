@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section d-flex flex-column flex-md-row align-items-center w-100 gap-5 custom-big-y-padding"
+      className="section d-flex flex-column flex-sm-row align-items-center w-100 gap-5 custom-big-y-padding"
     >
       <div className="img-div w-100 w-lg-50">
         <div className="img-inner-div">
