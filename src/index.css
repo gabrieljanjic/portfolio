@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 480px;
+  --color-background: #0c0f11;
+  --font-body: "Roboto", serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
