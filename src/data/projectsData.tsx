@@ -49,7 +49,7 @@ const CssTechnology: TechnologyItem = {
 };
 const ReactTestingLibraryTechnology: TechnologyItem = {
   id: 5,
-  name: "React Testing",
+  name: "Testing",
   logo: ReactTestingLibraryLogo,
   backgroundColor: "#871303",
 };

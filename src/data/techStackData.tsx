@@ -45,7 +45,7 @@ const techStackData: TechStackItem[] = [
   },
   {
     id: 6,
-    name: "React Testing",
+    name: "Testing",
     path: ReactTestingLibraryLogo,
   },
   {
