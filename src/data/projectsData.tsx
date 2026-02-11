@@ -10,6 +10,7 @@ import ReactTestingLibraryLogo from "../imgs/tech-imgs/react-testing-logo.png";
 
 import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.webp";
 import MovioTabletImg from "../imgs/project-imgs/movio-app-tablet-img.webp";
+import TalklyTabletImg from "../imgs/project-imgs/talkly-tablet-img.webp";
 
 type TechnologyItem = {
   id: number;
@@ -49,7 +50,7 @@ const CssTechnology: TechnologyItem = {
 };
 const ReactTestingLibraryTechnology: TechnologyItem = {
   id: 5,
-  name: "Testing",
+  name: "React Testing",
   logo: ReactTestingLibraryLogo,
   backgroundColor: "#871303",
 };
@@ -108,6 +109,22 @@ const projectData: ProjectItem[] = [
   },
   {
     id: 2,
+    name: "Talkly",
+    description:
+      "A modern, real-time chat application built with React, Node.js, and Socket.IO, featuring secure authentication, live messaging, and online presence tracking.",
+    technology: [
+      ReactTechnology,
+      TypeScriptTechnology,
+      NodeJsTechnology,
+      MongoDbTechnology,
+      TailwindTechnology,
+    ],
+    githubLink: "https://github.com/gabrieljanjic/talkly",
+    pageLink: "https://talkly-bay.vercel.app/",
+    img: TalklyTabletImg,
+  },
+  {
+    id: 3,
     name: "Travel Hub",
     description:
       "Travel Hub is a full-stack web application for managing airlines, airports, routes, and countries with an interactive map. It features real-time dashboards, CRUD operations, route distance calculations, and secure user authentication.",
