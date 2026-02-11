@@ -24,5 +24,4 @@
 
 ## 📱 Socials
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gabriel%20Janjić-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/gabrieljanjic/)  
-[![GitHub](https://img.shields.io/badge/GitHub-@gabrieljanjic-black?style=flat&logo=github)](https://github.com/gabrieljanjic)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gabriel%20Janjić-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/gabrieljanjic/)
