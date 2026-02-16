@@ -10,7 +10,7 @@ const TechStack = () => {
         {techStackData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col justify-center items-center gap-2 p-2 xs:p-3 border border-gray-400 rounded-md"
+            className="flex flex-col justify-center items-center gap-2 p-1 xs:p-3 border border-gray-400 rounded-md"
           >
             <img
               src={item.path}

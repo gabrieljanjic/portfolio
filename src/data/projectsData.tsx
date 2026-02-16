@@ -7,6 +7,7 @@ import NodeJsLogo from "../imgs/tech-imgs/node-js.png";
 import TailwindLogo from "../imgs/tech-imgs/tailwind.png";
 import NextJsLogo from "../imgs/tech-imgs/next-js.png";
 import ReactTestingLibraryLogo from "../imgs/tech-imgs/react-testing-logo.png";
+import VitestLogo from "../imgs/tech-imgs/vitest.png";
 
 import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.webp";
 import MovioTabletImg from "../imgs/project-imgs/movio-app-tablet-img.webp";
@@ -55,6 +56,13 @@ const ReactTestingLibraryTechnology: TechnologyItem = {
   backgroundColor: "#871303",
 };
 
+const VitestTechnology: TechnologyItem = {
+  id: 6,
+  name: "Vitest",
+  logo: VitestLogo,
+  backgroundColor: "#909902",
+};
+
 const JavaScriptTechnology: TechnologyItem = {
   id: 6,
   name: "JavaScript",
@@ -86,7 +94,7 @@ const NextJsTechnology: TechnologyItem = {
   id: 11,
   name: "Next.js",
   logo: NextJsLogo,
-  backgroundColor: "#6d6d6d",
+  backgroundColor: "#363636",
 };
 
 const projectData: ProjectItem[] = [
@@ -100,8 +108,9 @@ const projectData: ProjectItem[] = [
       ReactTechnology,
       TypeScriptTechnology,
       MongoDbTechnology,
-      ReactTestingLibraryTechnology,
       TailwindTechnology,
+      VitestTechnology,
+      ReactTestingLibraryTechnology,
     ],
     githubLink: "https://github.com/gabrieljanjic/movio",
     pageLink: "https://movio-delta.vercel.app/",
@@ -118,6 +127,8 @@ const projectData: ProjectItem[] = [
       NodeJsTechnology,
       MongoDbTechnology,
       TailwindTechnology,
+      VitestTechnology,
+      ReactTestingLibraryTechnology,
     ],
     githubLink: "https://github.com/gabrieljanjic/talkly",
     pageLink: "https://talkly-bay.vercel.app/",
