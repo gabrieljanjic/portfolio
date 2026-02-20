@@ -1,17 +1,17 @@
-import ReactLogo from "../imgs/tech-imgs/react.png";
-import CssLogo from "../imgs/tech-imgs/css.png";
-import JavaScriptLogo from "../imgs/tech-imgs/javascript.png";
-import TypeScriptLogo from "../imgs/tech-imgs/typescript.png";
-import MongoDbLogo from "../imgs/tech-imgs/mongo-db.png";
-import NodeJsLogo from "../imgs/tech-imgs/node-js.png";
-import TailwindLogo from "../imgs/tech-imgs/tailwind.png";
-import NextJsLogo from "../imgs/tech-imgs/next-js.png";
-import ReactTestingLibraryLogo from "../imgs/tech-imgs/react-testing-logo.png";
-import VitestLogo from "../imgs/tech-imgs/vitest.png";
+import ReactLogo from "../assets/imgs/tech-imgs/react.png";
+import CssLogo from "../assets/imgs/tech-imgs/css.png";
+import JavaScriptLogo from "../assets/imgs/tech-imgs/javascript.png";
+import TypeScriptLogo from "../assets/imgs/tech-imgs/typescript.png";
+import MongoDbLogo from "../assets/imgs/tech-imgs/mongo-db.png";
+import NodeJsLogo from "../assets/imgs/tech-imgs/node-js.png";
+import TailwindLogo from "../assets/imgs/tech-imgs/tailwind.png";
+import NextJsLogo from "../assets/imgs/tech-imgs/next-js.png";
+import ReactTestingLibraryLogo from "../assets/imgs/tech-imgs/react-testing-logo.png";
+import VitestLogo from "../assets/imgs/tech-imgs/vitest.png";
 
-import TravelHubTabletImg from "../imgs/project-imgs/travel-hub-tablet-img.webp";
-import MovioTabletImg from "../imgs/project-imgs/movio-app-tablet-img.webp";
-import TalklyTabletImg from "../imgs/project-imgs/talkly-tablet-img.webp";
+import TravelHubTabletImg from "../assets/imgs/project-imgs/travel-hub-tablet-img.png";
+import MovioTabletImg from "../assets/imgs/project-imgs/movio-app-tablet-img.jpg";
+import TalklyTabletImg from "../assets/imgs/project-imgs/talkly-tablet-img.png";
 
 type TechnologyItem = {
   id: number;

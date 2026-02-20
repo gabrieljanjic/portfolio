@@ -1,6 +1,6 @@
 import projectData from "../data/projectsData";
-import Web from "../imgs/web.png";
-import Github from "../imgs/github.png";
+import Web from "../assets/imgs/web.png";
+import Github from "../assets/imgs/github.png";
 
 const Projects = () => {
   return (
