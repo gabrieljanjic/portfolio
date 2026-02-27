@@ -6,7 +6,7 @@ import HtmlLogo from "../assets/imgs/tech-imgs/html.png";
 import JavaScriptLogo from "../assets/imgs/tech-imgs/javascript.png";
 import TypeScriptLogo from "../assets/imgs/tech-imgs/typescript.png";
 import MongoDbLogo from "../assets/imgs/tech-imgs/mongo-db.png";
-import MySqlLogo from "../assets/imgs/tech-imgs/my-sql.png";
+import PostgreSqlLogo from "../assets/imgs/tech-imgs/postgresql.png";
 import NodeJsLogo from "../assets/imgs/tech-imgs/node-js.png";
 import NextJsLogo from "../assets/imgs/tech-imgs/next-js.png";
 import ReactTestingLibraryLogo from "../assets/imgs/tech-imgs/react-testing-logo.png";
@@ -68,8 +68,8 @@ const techStackData: TechStackItem[] = [
   },
   {
     id: 10,
-    name: "MySQL",
-    path: MySqlLogo,
+    name: "PostgreSQL",
+    path: PostgreSqlLogo,
   },
 
   {
