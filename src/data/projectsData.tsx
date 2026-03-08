@@ -48,6 +48,12 @@ const TailwindTechnology: TechnologyItem = {
   logo: TailwindLogo,
   backgroundColor: "#1e40af",
 };
+const NativewindTechnology: TechnologyItem = {
+  id: 4,
+  name: "Nativewind",
+  logo: TailwindLogo,
+  backgroundColor: "#1e40af",
+};
 
 const ReactTestingLibraryTechnology: TechnologyItem = {
   id: 5,
@@ -124,7 +130,7 @@ const projectData: ProjectItem[] = [
     technology: [
       ReactNativeTechnology,
       TypeScriptTechnology,
-      TailwindTechnology,
+      NativewindTechnology,
       NodeJsTechnology,
       PostgreSQL,
     ],

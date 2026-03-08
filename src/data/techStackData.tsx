@@ -44,38 +44,37 @@ const techStackData: TechStackItem[] = [
     name: "React Native",
     path: ReactLogo,
   },
-
   {
     id: 6,
-    name: "Tailwind",
-    path: TailwindLogo,
+    name: "Node.js",
+    path: NodeJsLogo,
   },
   {
     id: 7,
-    name: "Node.js",
-    path: NodeJsLogo,
+    name: "Tailwind",
+    path: TailwindLogo,
   },
 
   {
     id: 8,
-    name: "Vitest",
-    path: VitestLogo,
-  },
-  {
-    id: 9,
-    name: "React Testing",
-    path: ReactTestingLibraryLogo,
-  },
-  {
-    id: 10,
     name: "PostgreSQL",
     path: PostgreSqlLogo,
   },
 
   {
-    id: 11,
+    id: 9,
     name: "MongoDB",
     path: MongoDbLogo,
+  },
+  {
+    id: 10,
+    name: "Vitest",
+    path: VitestLogo,
+  },
+  {
+    id: 11,
+    name: "React Testing",
+    path: ReactTestingLibraryLogo,
   },
   {
     id: 12,
