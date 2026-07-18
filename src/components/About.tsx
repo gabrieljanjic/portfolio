@@ -25,7 +25,7 @@ const About = () => {
         <div className="flex gap-2  mb-3">
           <img src={Gmail} className="w-6" />
           <p className="text-[#a8adb2] p-0 m-0  text-sm xs:text-base">
-            janjicgabriel1@gmail.com
+            janjicgabriel1@gmail.coms
           </p>
         </div>
         <div className="flex justify-between w-full">

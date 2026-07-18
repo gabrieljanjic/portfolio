@@ -1,9 +1,9 @@
 import ReactLogo from "../assets/imgs/tech-imgs/react.png";
 import BootstrapLogo from "../assets/imgs/tech-imgs/bootstrap.png";
 import TailwindLogo from "../assets/imgs/tech-imgs/tailwind.png";
-import CssLogo from "../assets/imgs/tech-imgs/css.png";
-import HtmlLogo from "../assets/imgs/tech-imgs/html.png";
-import JavaScriptLogo from "../assets/imgs/tech-imgs/javascript.png";
+import Csharp from "../assets/imgs/tech-imgs/c-sharp.png";
+import AspNetCore from "../assets/imgs/tech-imgs/asp-net-core.png";
+import MicrosoftSqlServer from "../assets/imgs/tech-imgs/microsoft-sql-server.png";
 import TypeScriptLogo from "../assets/imgs/tech-imgs/typescript.png";
 import MongoDbLogo from "../assets/imgs/tech-imgs/mongo-db.png";
 import PostgreSqlLogo from "../assets/imgs/tech-imgs/postgresql.png";
@@ -36,60 +36,58 @@ const techStackData: TechStackItem[] = [
   },
   {
     id: 4,
-    name: "JavaScript",
-    path: JavaScriptLogo,
+    name: "C#",
+    path: Csharp,
   },
   {
     id: 5,
+    name: "ASP.NET Core",
+    path: AspNetCore,
+  },
+  {
+    id: 6,
     name: "React Native",
     path: ReactLogo,
   },
   {
-    id: 6,
+    id: 7,
     name: "Node.js",
     path: NodeJsLogo,
   },
   {
-    id: 7,
-    name: "Tailwind",
-    path: TailwindLogo,
-  },
-
-  {
     id: 8,
+    name: "SQL Server",
+    path: MicrosoftSqlServer,
+  },
+  {
+    id: 9,
     name: "PostgreSQL",
     path: PostgreSqlLogo,
   },
-
   {
-    id: 9,
+    id: 10,
     name: "MongoDB",
     path: MongoDbLogo,
   },
   {
-    id: 10,
+    id: 11,
     name: "Vitest",
     path: VitestLogo,
   },
   {
-    id: 11,
+    id: 12,
     name: "React Testing",
     path: ReactTestingLibraryLogo,
   },
   {
-    id: 12,
-    name: "Bootstrap.js",
-    path: BootstrapLogo,
-  },
-  {
     id: 13,
-    name: "HTML",
-    path: HtmlLogo,
+    name: "Tailwind",
+    path: TailwindLogo,
   },
   {
     id: 14,
-    name: "CSS",
-    path: CssLogo,
+    name: "Bootstrap.js",
+    path: BootstrapLogo,
   },
 ];
 
