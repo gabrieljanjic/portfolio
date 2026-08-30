@@ -10,6 +10,8 @@
   <img src="https://skillicons.dev/icons?i=react" alt="React" width="40" height="40" />
   <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" width="40" height="40" />
   <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" width="40" height="40" />
+  <img src="https://skillicons.dev/icons?i=csharp" alt="C#" width="40" height="40" />
+  <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" width="40" height="40" />
   <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" width="40" height="40" />
   <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="40" height="40" />
   <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" width="40" height="40" />
