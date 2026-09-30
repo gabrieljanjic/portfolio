@@ -4,10 +4,10 @@ const WorkExperience = () => {
   return (
     <section
       id="work-experience"
-      className="w-full flex flex-col py-12 xs:py-16"
+      className="w-full flex flex-col py-10 xs:py-12"
     >
       <h5 className="text-white text-xl font-bold mb-2 sm:mb-6 tracking-wide">
-        WORK EXPERIENCE
+        WORK EXPERIENCE1
       </h5>
       {workExperienceData.map((item) => (
         <div key={item.id} className="flex flex-col md:flex-row gap-4 mb-6">

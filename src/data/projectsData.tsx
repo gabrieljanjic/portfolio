@@ -7,10 +7,13 @@ import TailwindLogo from "../assets/imgs/tech-imgs/tailwind.png";
 import NextJsLogo from "../assets/imgs/tech-imgs/next-js.png";
 import ReactTestingLibraryLogo from "../assets/imgs/tech-imgs/react-testing-logo.png";
 import VitestLogo from "../assets/imgs/tech-imgs/vitest.png";
+import MSSQLLogo from "../assets/imgs/tech-imgs/microsoft-sql-server.png";
+import AspNetCoreLogo from "../assets/imgs/tech-imgs/asp-net-core.png";
 
 import FoodieMobileImg from "../assets/imgs/project-imgs/foodie-mobile-img.png";
 import MovioTabletImg from "../assets/imgs/project-imgs/movio-app-tablet-img.jpg";
 import TalklyTabletImg from "../assets/imgs/project-imgs/talkly-tablet-img.png";
+import SmartMealTabletImg from "../assets/imgs/project-imgs/smart-meal-tablet.png";
 
 type TechnologyItem = {
   id: number;
@@ -103,9 +106,37 @@ const PostgreSQL: TechnologyItem = {
   logo: PostgreSql,
   backgroundColor: "#42428c",
 };
+const MSSQL: TechnologyItem = {
+  id: 13,
+  name: "MSSQL",
+  logo: MSSQLLogo,
+  backgroundColor: "#0069B9",
+};
+const AspNetCore: TechnologyItem = {
+  id: 14,
+  name: ".NET",
+  logo: AspNetCoreLogo,
+  backgroundColor: "#511f73",
+};
 const projectData: ProjectItem[] = [
   {
     id: 1,
+    name: "Smart meal",
+    description:
+      "Meal planning and smart shopping app — search for groceries, compare prices across the three largest supermarket chains (Konzum, Lidl, Kaufland), create meals with automatic calorie calculations, and generate a shopping list with real-time tracking of the total cost.",
+    technology: [
+      ReactTechnology,
+      AspNetCore,
+      TypeScriptTechnology,
+      MSSQL,
+      TailwindTechnology,
+    ],
+    githubLink: "https://github.com/gabrieljanjic/smartmeal-frontend",
+    pageLink: "https://smartmeal.gabrieljanjic.com/",
+    img: SmartMealTabletImg,
+  },
+  {
+    id: 2,
     name: "Movio",
     description:
       "A full-stack social platform for movie and TV series enthusiasts. Discover trending content, connect with other film lovers, and share your thoughts through a personalized feed.",
@@ -123,7 +154,7 @@ const projectData: ProjectItem[] = [
     img: MovioTabletImg,
   },
   {
-    id: 2,
+    id: 3,
     name: "Foodie",
     description:
       "Foodie is a mobile recipe sharing app built with React Native. Users can discover, create, and save their favourite recipes. Browse hundreds of dishes, add your own creations, and share them with the community.",
@@ -140,7 +171,7 @@ const projectData: ProjectItem[] = [
     img: FoodieMobileImg,
   },
   {
-    id: 3,
+    id: 4,
     name: "Talkly",
     description:
       "A modern, real-time chat application built with React, Node.js, and Socket.IO, featuring secure authentication, live messaging, and online presence tracking.",
