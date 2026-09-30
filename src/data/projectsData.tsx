@@ -13,7 +13,7 @@ import AspNetCoreLogo from "../assets/imgs/tech-imgs/asp-net-core.png";
 import FoodieMobileImg from "../assets/imgs/project-imgs/foodie-mobile-img.png";
 import MovioTabletImg from "../assets/imgs/project-imgs/movio-app-tablet-img.jpg";
 import TalklyTabletImg from "../assets/imgs/project-imgs/talkly-tablet-img.png";
-import SmartMealTabletImg from "../assets/imgs/project-imgs/smart-meal-tablet.png";
+import SmartMealTabletImg from "../assets/imgs/project-imgs/smart-meal-tablet.jpg";
 
 type TechnologyItem = {
   id: number;
