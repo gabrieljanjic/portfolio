@@ -12,7 +12,7 @@ import AspNetCoreLogo from "../assets/imgs/tech-imgs/asp-net-core.png";
 
 import FoodieMobileImg from "../assets/imgs/project-imgs/foodie-mobile-img.png";
 import MovioTabletImg from "../assets/imgs/project-imgs/movio-app-tablet-img.jpg";
-import TalklyTabletImg from "../assets/imgs/project-imgs/talkly-tablet-img.png";
+//import TalklyTabletImg from "../assets/imgs/project-imgs/talkly-tablet-img.png";
 import SmartMealTabletImg from "../assets/imgs/project-imgs/smart-meal-tablet.jpg";
 
 type TechnologyItem = {
@@ -170,7 +170,7 @@ const projectData: ProjectItem[] = [
       "https://github.com/gabrieljanjic/foodie/blob/main/mobile/assets/images/qr_code.PNG",
     img: FoodieMobileImg,
   },
-  {
+  /*{
     id: 4,
     name: "Talkly",
     description:
@@ -187,7 +187,7 @@ const projectData: ProjectItem[] = [
     githubLink: "https://github.com/gabrieljanjic/talkly",
     pageLink: "https://talkly-bay.vercel.app/",
     img: TalklyTabletImg,
-  },
+  },*/
 ];
 
 export default projectData;
