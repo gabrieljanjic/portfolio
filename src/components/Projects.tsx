@@ -52,8 +52,8 @@ const Projects = () => {
               className="text-[#e5e5e5] text-xs xs:text-sm no-underline cursor-pointer hover:text-white w-full"
               target="_blank"
             >
-              <div className="flex justify-center items-center gap-2 bg-[#1c1e21] rounded-full p-0 sm:p-2 w-full">
-                <div className="flex items-center justify-center gap-2 px-4">
+              <div className="flex justify-center items-center gap-2 bg-[#1c1e21] rounded-full p-2 w-full">
+                <div className="flex items-center justify-center gap-2 p-0 sm:px-4">
                   <img
                     src={Web}
                     className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
