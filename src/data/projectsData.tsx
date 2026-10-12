@@ -30,7 +30,7 @@ type ProjectItem = {
   description: string;
   technology: TechnologyItem[];
   githubLink: string;
-  pageLink: string;
+  pageLink?: string;
   img: string;
 };
 
@@ -169,7 +169,7 @@ const projectData: ProjectItem[] = [
       ReactTestingLibraryTechnology,
     ],
     githubLink: "https://github.com/gabrieljanjic/movio",
-    pageLink: "https://movio-delta.vercel.app/",
+    /*pageLink: "https://movio-delta.vercel.app/",*/
     img: MovioTabletImg,
   },
   {

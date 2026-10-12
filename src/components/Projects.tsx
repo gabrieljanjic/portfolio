@@ -1,6 +1,6 @@
 import projectData from "../data/projectsData";
-import Web from "../assets/imgs/web.png";
-import Github from "../assets/imgs/github.png";
+import Web from "../assets/imgs/icons/web.png";
+import Github from "../assets/imgs/icons/github.png";
 
 const Projects = () => {
   return (
@@ -47,22 +47,24 @@ const Projects = () => {
             ))}
           </div>
           <div className="flex justify-between gap-3 mt-4">
-            <a
-              href={item.pageLink}
-              className="text-[#e5e5e5] text-xs xs:text-sm no-underline cursor-pointer hover:text-white w-full"
-              target="_blank"
-            >
-              <div className="flex justify-center items-center gap-2 bg-[#1c1e21] rounded-full p-2 w-full">
-                <div className="flex items-center justify-center gap-2 p-0 sm:px-4">
-                  <img
-                    src={Web}
-                    className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
-                    alt="Live Demo"
-                  />
-                  <p>LIVE DEMO</p>
+            {item.pageLink && (
+              <a
+                href={item.pageLink}
+                className="text-[#e5e5e5] text-xs xs:text-sm no-underline cursor-pointer hover:text-white w-full"
+                target="_blank"
+              >
+                <div className="flex justify-center items-center gap-2 bg-[#1c1e21] rounded-full p-2 w-full">
+                  <div className="flex items-center justify-center gap-2 p-0 sm:px-4">
+                    <img
+                      src={Web}
+                      className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
+                      alt="Live Demo"
+                    />
+                    <p>LIVE DEMO</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            )}
             <a
               href={item.githubLink}
               className="text-[#e5e5e5] text-xs xs:text-sm no-underline cursor-pointer hover:text-white w-full"

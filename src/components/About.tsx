@@ -1,7 +1,7 @@
-import MyPhoto from "../assets/imgs/profile-picture.jpg";
+import MyPhoto from "../assets/imgs/icons/profile-picture.jpg";
 import aboutData from "../data/aboutData";
-import Pin from "../assets/imgs/pin.png";
-import Gmail from "../assets/imgs/gmail.png";
+import Pin from "../assets/imgs/icons/pin.png";
+import Gmail from "../assets/imgs/icons/gmail.png";
 
 const About = () => {
   return (

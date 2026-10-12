@@ -1,5 +1,5 @@
-import Linkedin from "../assets/imgs/linkedin.png";
-import Github from "../assets/imgs/github.png";
+import Linkedin from "../assets/imgs/icons/linkedin.png";
+import Github from "../assets/imgs/icons/github.png";
 
 type AboutItem = {
   id: number;
