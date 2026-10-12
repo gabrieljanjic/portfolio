@@ -9,6 +9,8 @@ import ReactTestingLibraryLogo from "../assets/imgs/tech-imgs/react-testing-logo
 import VitestLogo from "../assets/imgs/tech-imgs/vitest.png";
 import MSSQLLogo from "../assets/imgs/tech-imgs/microsoft-sql-server.png";
 import AspNetCoreLogo from "../assets/imgs/tech-imgs/asp-net-core.png";
+import CloudLogo from "../assets/imgs/tech-imgs/cloud.png";
+import DockerLogo from "../assets/imgs/tech-imgs/docker.png";
 
 import FoodieMobileImg from "../assets/imgs/project-imgs/foodie-mobile-img.png";
 import MovioTabletImg from "../assets/imgs/project-imgs/movio-app-tablet-img.jpg";
@@ -118,6 +120,21 @@ const AspNetCore: TechnologyItem = {
   logo: AspNetCoreLogo,
   backgroundColor: "#511f73",
 };
+
+const Cloud: TechnologyItem = {
+  id: 15,
+  name: "VPS",
+  logo: CloudLogo,
+  backgroundColor: "#00008B",
+};
+
+const Docker: TechnologyItem = {
+  id: 16,
+  name: "Docker",
+  logo: DockerLogo,
+  backgroundColor: "#1877F2",
+};
+
 const projectData: ProjectItem[] = [
   {
     id: 1,
@@ -128,11 +145,13 @@ const projectData: ProjectItem[] = [
       ReactTechnology,
       AspNetCore,
       TypeScriptTechnology,
+      Docker,
+      Cloud,
       MSSQL,
       TailwindTechnology,
     ],
-    githubLink: "https://github.com/gabrieljanjic/smartmeal-frontend",
-    pageLink: "https://smartmeal.gabrieljanjic.com/",
+    githubLink: "https://github.com/gabrieljanjic/smartmeal",
+    pageLink: "https://smartmeals.gabrieljanjic.com/",
     img: SmartMealTabletImg,
   },
   {
