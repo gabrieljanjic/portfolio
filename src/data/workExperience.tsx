@@ -11,6 +11,16 @@ type WorkExperienceItem = {
 const workExperienceData: WorkExperienceItem[] = [
   {
     id: 1,
+    position: "Full-stack developer / IT Helpdesk",
+    company: "EHS d.o.o",
+    description:
+      "Develop and maintain a radiology application used by major hospitals and healthcare institutions across Croatia, working with .NET and ASP.NET MVC architecture. Provide IT helpdesk and technical support for healthcare institutions, resolving software and user-related issues. ",
+    start: "June 2026",
+    end: "present",
+    workType: "Full-time",
+  },
+  {
+    id: 2,
     position: "Full-stack developer",
     company: "Ergo-net d.o.o",
     description:

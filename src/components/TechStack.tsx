@@ -6,7 +6,7 @@ const TechStack = () => {
       <h5 className="text-white text-xl font-bold mb-5 tracking-wide">
         TECH STACK
       </h5>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(8rem,1fr))] gap-4">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(7rem,1fr))] gap-4">
         {techStackData.map((item) => (
           <div
             key={item.id}
